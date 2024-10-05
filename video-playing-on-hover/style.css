@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.general-wrapper{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-container{
+    aspect-ratio: 4/3;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 2px 2px lightgray;
+}
+
+.video-container__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.video-container__video{
+    width: 100%;
+    height: 100%;
+}
