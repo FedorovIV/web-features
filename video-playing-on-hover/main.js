@@ -10,6 +10,7 @@ document.addEventListener('mouseover', (ev)=>{
     const image = currentVideoContainer.querySelector('.video-container__image');
 
     video.play();
+    video.muted = true;
     image.hidden = true;
 })
 
